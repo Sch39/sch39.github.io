@@ -1945,13 +1945,6 @@ body{
   background-color:#7cafcc4d;
 }
 
-.video-people video{
-  max-width: 600px;
-  box-sizing:border-box;
-  margin: 20px;
-}
-
-
 
 
 .carousel-item img{
@@ -1999,19 +1992,26 @@ body{
 
 
 
-@media screen and (min-width: 768px){
-.video-people video{
-  width: 950px;
-}
 
-}
 
-@media screen and (min-width:530px){
-  .video-people  video{
-    width: 500px;
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; height: 0; overflow: hidden;
+  }
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   }
 
-}
-
-
+  .disable-btn{
+    width: 100%;
+    height: 100px;
+    background-color: #217bbc;
+  }
 
